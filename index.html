@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Confessions</title>
+</head>
+<body>
+    <div id="main-content">
+        <a href="#" id="disclosure-link">disclosure</a>
+        <button id="entry-button">PLEASE ENTER!</button>
+        <div id="welcome-text">Hello, you look like you've been carrying a weight on your shoulders.</div>
+        <img src="Rock.png" alt="Rock" id="rock-image">
+        <div id="info-text-1">Social scientists have discovered that sharing a secret anonymously can be good for your mental and physical health.</div>
+        <div id="info-text-2" style="opacity: 0; transition: opacity 1s ease;">Would you like to share what's been on your mind?</div>
+                <!-- Buttons for Share or Decline -->
+        <button id="share-button">Share</button>
+        <button id="no-thanks-button">No, thank you</button>
+        <div id="decline-text" style="opacity: 1; transition: opacity 1s ease; display: none;">It’s ok if you don’t feel like sharing. But know help is always there!</div>
+        <div id="inspirational-quote" style="opacity: 0; transition: opacity 1s ease;"></div>
+        <button id="resources-button" style="opacity: 0; transition: opacity 1s ease; display: none; border-radius: 15px; padding: 10px 20px;">Resources</button>
+        <textarea id="share-box"></textarea>
+        <button id="submit-button">Submit</button>
+        <video id="rope-video" src="Rope.mov" autoplay></video>
+        <div id="resources">
+            <!-- TBD IF RESOURCES ARE ADDED HERE -->
+        </div>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <div id="disclosure-popup" style="display:none; position:absolute; bottom:30px; right:20px; background-color:white; border-radius:5px; padding:20px;">
+        This website aim to combine art with social science. Any information you provide is anonymous, is not stored anywhere – and is not shared with anyone. Although we believe most people can benefit from working with licensed mental health professionals – this website is not meant to be a substitute.
+        <button id="hide-disclosure">Hide ^</button> </div>
+        <!-- FIGURE OUT THE DISCLOSURE POP-UP <-- doesn't pop up-->
+</body>
+</html>

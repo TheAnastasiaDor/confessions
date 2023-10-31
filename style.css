@@ -1,0 +1,128 @@
+body {
+    background-image: url('Background.jpeg');
+    background-size: cover;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#disclosure-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+#disclosure-popup {
+    max-width: 300px;
+    font-size: 0.8em;
+    z-index: 100;  /* Ensures that the popup is on top of other content */
+}
+
+#hide-disclosure {
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(212, 242, 232);
+    border: 2px solid darkgrey;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#hide-disclosure {
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(212, 242, 232);
+    border: 2px solid darkgrey;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#entry-button, 
+#welcome-text, 
+#info-text-1, 
+#info-text-2,
+#share-button, 
+#no-thanks-button,
+#decline-text,
+#resources-button {
+    font-size: 2em;  
+}
+
+#entry-button {
+    background-color: rgb(118, 185, 163);
+    border: 2px solid darkgrey;
+    border-radius: 50%; /* oval */
+    padding: 15px 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#rock-image {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-height: 33vh;
+    display: none;
+}
+
+#welcome-text, 
+#info-text-1, 
+#info-text-2, 
+#decline-text {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0; /* Hidden in the beginning */
+    transition: opacity 1s ease; /* Text fading in smoothly */
+}
+
+#share-button, 
+#no-thanks-button,
+#resources-button {
+    background-color: rgb(212, 242, 232);
+    border: 2px solid darkgrey;
+    border-radius: 15px; /* Rounded edges */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0; /* Hidden in the beginning */
+    transition: opacity 1s ease; /* This ensures the buttons fade in smoothly */
+    display: inline-block; /* Displayed side by side */
+}
+
+#no-thanks-button {
+    color: orangered;
+}
+
+#share-box {
+    display: none;
+    font-size: 2em; 
+}
+
+#submit-button {
+    margin-top: 10px;
+    display: none; /* Hidden in the beginning */
+}
+
+#rope-video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 50vh;
+    display: none; /* Hidden in the beginning */
+}
+
+#congrats-text {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px; /* Space between the video and the text */
+}
